@@ -1,0 +1,82 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+fruits = ('BANANA','APPLE','PEAR')
+vegetable = ('tomato','patato','cauliflower')
+print(type(fruits))
+print(type(vegetable))
+
+
+# In[2]:
+
+
+fruits_vegetable = fruits+vegetable
+print(fruits_vegetable)
+
+
+# In[3]:
+
+
+print(len(fruits_vegetable))
+
+
+# In[4]:
+
+
+favorite_mushroom =('lentinula edodes',)
+favorite_beverage = ( 'COLA',)
+food_tuple = fruits_vegetable+favorite_mushroom+favorite_beverage
+print(food_tuple)
+
+
+# In[5]:
+
+
+fruits_vegetable = food_tuple[0:6]
+favorite_mushroom =food_tuple[-2]
+favorite_beverage =food_tuple[-1]
+print(fruits_vegetable)
+print(favorite_mushroom)
+print(favorite_beverage)
+
+
+# In[6]:
+
+
+food_list = list(food_tuple)
+print(food_list)
+
+
+# In[7]:
+
+
+print(food_tuple[3:5])
+
+
+# In[8]:
+
+
+print(food_list[-3:])
+print(food_list[:3])
+
+
+# In[9]:
+
+
+del food_tuple
+
+
+# In[10]:
+
+
+asian_countries = ('India','China','Singapore','Thailand','Indonesia')
+
+
+# In[11]:
+
+
+print('Finland' in asian_countries)     
+print('India' in asian_countries)     
